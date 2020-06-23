@@ -1,0 +1,79 @@
+body{
+	font-family: Cursive, Helvetica, serif;
+	background: lightslategray;/*set the color*/ 
+}
+
+.container{
+	height: 500px; /*if u omit display, set this to 300..*/
+	width: 1000px;
+	position: absolute;
+	top: 50%;
+	left:50%;
+	transform: translateX(-50%) translateY(-50%);
+	background:rgba(255, 255, 255, 0.5);/*set color*/
+	padding: 20px;
+	border:5px solid black;
+	box-shadow: 0 0 8px 3px #fff;/*change color*/
+	display: grid;/* you can omit this*/
+}
+
+.title{
+	padding-top: 20px;
+	text-align: center;
+	font-size: 36px;
+	text-transform: uppercase;
+	color: black;
+	font-size: large;
+	padding-bottom: 10px;
+}
+
+.question{
+	padding: 20px;
+	font-size: 20px;
+	background:darkgray;
+	border-radius: 24px;
+	margin: 10px 0px;
+}
+
+.option{
+	width: 450px;
+	display: inline-block;
+	padding: 10px 0 10px 15px;
+	vertical-align: middle;
+	background:dodgerblue;
+	margin: 10px 0 10px 10px;
+	color: #000000;
+	border-radius: 20px;
+	cursor: pointer;
+
+}
+
+.option:hover{
+	background:#08038C;
+	color: grey;
+}
+.next-btn{
+	border:none;
+	outline: none;
+	background:dimgrey;
+	width: 100px;
+	height: 35px;
+	border-radius: 20px;
+	cursor: pointer;
+	float: right;
+	margin: 10px
+}
+.next-btn:hover{
+	background:white;
+	color: black;
+}
+.results{
+	height:100px;
+	text-align: center;
+	font-size: 75px;
+
+}
+.option input:checked .option{
+	background:#08038C;
+	color:#000000;
+}
